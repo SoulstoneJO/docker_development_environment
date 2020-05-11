@@ -1,0 +1,11 @@
+windows home:
+1.run docker.cmd
+
+2.check vm option
+
+3.run shell: `bcdedit /set hypervisorlaunchtype auto`
+
+4.regist table
+REG ADD "HKEY_LOCAL_MACHINE\software\Microsoft\Windows NT\CurrentVersion" /v EditionId /T REG_EXPAND_SZ /d Professional /F
+
+5.restart system
